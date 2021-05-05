@@ -9,7 +9,7 @@
 
 .login, .signup, .create, .editprofile{
   border: 2px solid grey;
-  background-color: rgb(248, 245, 245);
+  background-color: rgb(190, 187, 187);
   border-radius: 10%;
   width: 400px;
   height: 700px;
@@ -41,7 +41,7 @@
   display: flex;
   /* font-family: 'Itim', cursive; */
   flex-direction: column;
-   background-color: rgb(248, 245, 245); 
+   background-color: rgb(223, 219, 219); 
   height: 700px;
 }
 .searchform{
