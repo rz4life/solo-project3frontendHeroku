@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.App {
+  text-align: center;
+  color: white;
+  font-family: 'Itim', cursive;
+  align-items: center;
+  width: 100%; 
+}
+
+.login, .signup, .create, .editprofile{
+  border: 2px solid grey;
+  background-color: rgb(190, 187, 187);
+  border-radius: 10%;
+  width: 400px;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+.loginform{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.buttons{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+}
+.input{
+  margin: 10px;
+  justify-content: center;
+}
+.friendpage, .Chatpage, .profilepage,.addafriendpage, .signuppage, 
+.loginpage, .editprofilepage, .messagingpage, .singleviewpage{
+  align-items: center;
+  display: flex;
+  /* font-family: 'Itim', cursive; */
+  flex-direction: column;
+   background-color: grey; 
+  height: 700px;
+}
+.searchform{
+  display: flex;
+  justify-content: center;
+}
+.eachfriend{
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: left;
+  color: rgb(31, 30, 30);
+}
+
+.messaging{
+  border: 2px solid grey;
+  border-radius: 10%;
+  justify-content: center;
+  background-color: rgb(190, 187, 187);
+  width: 60%;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  /* background-image: url(https://cdn.pixabay.com/photo/2016/11/22/20/04/abstract-1850424__480.jpg); */
+}
+
+
+ .request{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+  border: 1px solid grey;
+ 
+}
+.acceptbutton{
+height: 30px;
+margin: 20px 180px;
+
+
+}
+
+.findfriend,  .friend, .singleview, .profile, .Chat, .friendrequests {
+  border: 2px solid grey;
+  border-radius: 10%;
+  justify-content: center;
+  background-color: rgb(190, 187, 187);
+  width: 60%;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+.navbar{
+background-color: rgb(8, 8, 250);
+padding: 30px;
+}
+.navtext{
+  color:white;
+  padding: 10px;
+}
+
+.friendName{
+  padding: 20px;
+  background-color: rgb(8, 8, 250);
+
+}
+.friendmessage{
+  background-color: greenyellow;
+  text-align: right;
+  padding: 10px;
+}
+.usermessage{
+background-color: indianred;
+text-align: left;
+padding: 10px;
+
+}
