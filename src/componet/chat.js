@@ -10,7 +10,7 @@ const Chat = (props) =>{
 
     const getallchat = () =>{
         console.log(userId)
-        axios.get(`http://localhost:3001/chat/getchats/${userId}`)
+        axios.get(`https://murmuring-coast-34375.herokuapp.com/chat/getchats/${userId}`)
         .then ((response) =>{
             console.log(response)
             setAllchat(response.data.allchat)

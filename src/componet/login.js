@@ -10,7 +10,7 @@ const Login = (props) =>{
     const submitform = (e) =>{
         e.preventDefault()
         if( emailornumber === 'email'){
-            axios.post ('http://localhost:3001/users/emaillogin', {
+            axios.post ('https://murmuring-coast-34375.herokuapp.com/users/emaillogin', {
                 email: email,
                 password: password
             }).then ((response) =>{
@@ -21,7 +21,7 @@ const Login = (props) =>{
                 console.log(error)
             })
         } else if(emailornumber ==='number'){
-            axios.post ('http://localhost:3001/users/numberlogin', {
+            axios.post ('https://murmuring-coast-34375.herokuapp.com/users/numberlogin', {
                 number: number,
                 password: password
             }).then ((response) =>{

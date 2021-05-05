@@ -14,7 +14,7 @@ const Messaging = (props) =>{
         e.preventDefault()
         const chatId = localStorage.getItem('chatId')
         const userId = localStorage.getItem('userId')
-        axios.post(`http://localhost:3001/chat/createmessage/${chatId}/${userId}`, {
+        axios.post(`https://murmuring-coast-34375.herokuapp.com/chat/createmessage/${chatId}/${userId}`, {
             message: message
         }).then ((response) =>{
             console.log(response)
@@ -24,7 +24,7 @@ const Messaging = (props) =>{
     const getallmessages = async () =>{
         const chatId = localStorage.getItem('chatId')
 
-        axios.get (`http://localhost:3001/chat/getallmessage/${chatId}`)
+        axios.get (`https://murmuring-coast-34375.herokuapp.com/chat/getallmessage/${chatId}`)
         .then((response) =>{
             console.log(response)
             setAllmessages(response.data.allmessage)

@@ -10,7 +10,7 @@ const Newfriend = (props) =>{
 
     const submitform = (e) =>{
         e.preventDefault()
-        axios.post ('http://localhost:3001/users/getalluser', {
+        axios.post ('https://murmuring-coast-34375.herokuapp.com/users/getalluser', {
             firstname: firstname,
         }).then ((response) =>{
             console.log(response.data.alluser)

@@ -16,7 +16,7 @@ const Signup = (props) =>{
     const submitform = (e) =>{
         e.preventDefault()
 
-        axios.post ('http://localhost:3001/users/signup', {
+        axios.post ('https://murmuring-coast-34375.herokuapp.com/users/signup', {
             firstname: firstname,
             lastname: lastname,
             email: email,

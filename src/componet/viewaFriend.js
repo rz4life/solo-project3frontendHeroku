@@ -16,7 +16,7 @@ const Viewafriend = (props) =>{
         console.log(userId)
         console.log(userId2)
 
-        axios.post (`http://localhost:3001/friend/create/${userId}/${userId2}`)
+        axios.post (`https://murmuring-coast-34375.herokuapp.com/friend/create/${userId}/${userId2}`)
         .then((response) =>{
             console.log(response)
         }).catch((error) =>{
@@ -28,7 +28,7 @@ const Viewafriend = (props) =>{
     const verify = (id) =>{
 
         const userId = localStorage.getItem('userId')
-        axios.get (`http://localhost:3001/friend/verifyfriend/${userId}/${id}`)
+        axios.get (`https://murmuring-coast-34375.herokuapp.com/friend/verifyfriend/${userId}/${id}`)
         .then((response) =>{
             console.log(response)
             if(response.data.accepted === true){
@@ -66,7 +66,7 @@ return(
                <Link to = '/chat'><button
                 onClick = {() => {
                     const userId = localStorage.getItem('userId')
-                    axios.post (`http://localhost:3001/chat/create/${userId}/${props.singlefriend.friend.id}`)
+                    axios.post (`https://murmuring-coast-34375.herokuapp.com/chat/create/${userId}/${props.singlefriend.friend.id}`)
                     .then((response) =>{
                     console.log(response)
                     }).catch((error) =>{
@@ -92,7 +92,7 @@ return(
                 <Link to = '/chat'><button
                 onClick = {() => {
                     const userId = localStorage.getItem('userId')
-                    axios.post (`http://localhost:3001/chat/create/${userId}/${props.singlefriend.id}`)
+                    axios.post (`https://murmuring-coast-34375.herokuapp.com/chat/create/${userId}/${props.singlefriend.id}`)
                     .then((response) =>{
                     console.log(response)
                     }).catch((error) =>{

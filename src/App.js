@@ -26,7 +26,7 @@ function App() {
     
     const userId = localStorage.getItem('userId')
     try {
-    const user = await axios.get(`http://localhost:3001/users/getuser/${userId}`)
+    const user = await axios.get(`https://murmuring-coast-34375.herokuapp.com/users/getuser/${userId}`)
     console.log(user)
     if( user.data.user){
       setUser(user.data.user)

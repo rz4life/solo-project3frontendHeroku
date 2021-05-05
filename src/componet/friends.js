@@ -12,7 +12,7 @@ const Friends = (props) =>{
     const getmyfriendrequests =() =>{
     const userId = localStorage.getItem('userId')
 
-        axios.get(`http://localhost:3001/friend/getmyfriendequests/${userId}`)
+        axios.get(`https://murmuring-coast-34375.herokuapp.com/friend/getmyfriendequests/${userId}`)
         .then((response) =>{
             console.log(response.data.userfriends)
             setAllfriendreqest(response.data.userfriends)
@@ -25,7 +25,7 @@ const Friends = (props) =>{
     const getmyfriend =() =>{
         const userId = localStorage.getItem('userId')
     
-            axios.get(`http://localhost:3001/friend/getuserfriends/${userId}`)
+            axios.get(`https://murmuring-coast-34375.herokuapp.com/friend/getuserfriends/${userId}`)
             .then((response) =>{
                 console.log(response.data.acceptedFriends)
                 setAllfriend(response.data.acceptedFriends)
@@ -50,7 +50,7 @@ const Friends = (props) =>{
                          <button className = 'acceptbutton' onClick = {() =>{
                           const userId = localStorage.getItem('userId')
 
-                        axios.post(`http://localhost:3001/friend/acceptafriendrequest/${userId}`)
+                        axios.post(`https://murmuring-coast-34375.herokuapp.com/friend/acceptafriendrequest/${userId}`)
                         .then((response) =>{
                            console.log(response.data)
                            setRequeststatus('Accepted')

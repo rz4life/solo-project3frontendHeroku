@@ -20,7 +20,7 @@ const Editprofile = (props) =>{
         e.preventDefault()
         const userId = localStorage.getItem('userId')
 
-        axios.put (`http://localhost:3001/users/editprofile/${userId}`, {
+        axios.put (`https://murmuring-coast-34375.herokuapp.com/users/editprofile/${userId}`, {
             firstname: firstname,
             lastname: lastname,
             email: email,
